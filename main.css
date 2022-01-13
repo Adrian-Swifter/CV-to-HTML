@@ -1,13 +1,23 @@
 body {
   max-width: 800px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  font-family: "Montserrat", sans-serif;
+  color: #494e5f;
+}
+
+li::marker {
+  content: "- ";
 }
 
 .main-bg-color {
-    background-color: #C4E2CA;
+  background-color: #c4e2ca;
 }
 
 .secondary-bg-color {
-    background-color: #587D9F;
+  background-color: #587d9f;
+}
+
+ul.skills > li::marker,
+ul.contact > li::marker {
+  content: "";
 }
