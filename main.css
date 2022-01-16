@@ -31,5 +31,47 @@ ul.nav li::marker {
 }
 
 .fw-bolder {
-  font-weight: 500!important;
+  font-weight: 500 !important;
+}
+
+/* FORM TASK */
+
+.field-wrapper {
+  position: relative;
+}
+
+.field-wrapper.success input,
+.field-wrapper.success textarea {
+  border-color: #2ecc71;
+}
+
+.field-wrapper.error input,
+.field-wrapper.error textarea {
+  border-color: #e74c3c;
+}
+
+.field-wrapper i {
+  visibility: hidden;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+.field-wrapper.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.field-wrapper.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.field-wrapper span {
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.field-wrapper.error span {
+  visibility: visible;
 }

@@ -48,38 +48,38 @@
     <div class="container">
       <div class="row"></div>
       <form id="form" class="form">
-          <div class="col-md-12">
+          <div class="col-md-12 field-wrapper">
             <label for="fist-name">First name</label>
-            <input type="text" class="form-control" id="fist-name" />
+            <input type="text" class="form-control" id="first-name" />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
-            <span>Please enter a valid first name.</span>
+            <span class="error-msg"></span>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 field-wrapper">
             <label for="last-name">Last name</label>
             <input type="email" class="form-control" id="last-name" />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
-            <span>Please enter a valid last name.</span>
+            <span class="error-msg"></span>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 field-wrapper">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="" id="male">
+              <label class="form-check-label" for="male">
                 Male
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
+              <input class="form-check-input" type="checkbox" value="" id="female">
+              <label class="form-check-label" for="female">
                 Female
               </label>
             </div>
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
-            <span>Please choose your gender.</span>
+            <span class="error-msg"></span>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 field-wrapper">
             <label for="birth-year">Password check</label>
             <select class="form-select" id="birth-year">
               <option selected disabled value="">Choose...</option>
@@ -203,23 +203,23 @@
           </select>
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
-            <span>Please select your year of birth.</span>
+            <span class="error-msg"></span>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 field-wrapper">
             <label for="address">Address</label>
-            <textarea class="form-control" id="address"></textarea>
+            <textarea class="form-control" id="address" rows="1"></textarea>
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
-            <span>Please enter a valid address.</span>
+            <span class="error-msg"></span>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 field-wrapper">
             <label for="city">City</label>
             <input type="text" class="form-control" id="city" />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
-            <span>Please enter a valid city name.</span>
+            <span class="error-msg"></span>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 field-wrapper">
             <button class="btn btn-primary">Submit</button>
           </div>
       </form>
