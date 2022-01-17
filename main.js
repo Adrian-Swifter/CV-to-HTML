@@ -33,7 +33,7 @@ if ($(".slider").length !== 0) {
     const addressValue = address.value.trim();
     const cityValue = city.value.trim();
 
-    const regex = new RegExp("^[a-zA-Z0-9]");
+    const regex = new RegExp("^[a-zA-Z0-9\\sčČćĆšŠđĐžŽ]+$");
 
     if (firstNameValue === "") {
       setErrorFor(firstName, "First name can't be blank");
@@ -46,7 +46,7 @@ if ($(".slider").length !== 0) {
     if (lastNameValue === "") {
       setErrorFor(lastName, "Last name can't be blank");
     } else if (!regex.test(lastNameValue)) {
-      setErrorFor(firstName, "Special characters aren't allowed");
+      setErrorFor(lastName, "Special characters aren't allowed");
     } else {
       setSuccessFor(lastName);
     }
@@ -68,7 +68,7 @@ if ($(".slider").length !== 0) {
     if (addressValue === "") {
       setErrorFor(address, "Address field can't be blank");
     } else if (!regex.test(addressValue)) {
-      setErrorFor(firstName, "Special characters aren't allowed");
+      setErrorFor(address, "Special characters aren't allowed");
     } else {
       setSuccessFor(address);
     }
@@ -76,12 +76,11 @@ if ($(".slider").length !== 0) {
     if (cityValue === "") {
       setErrorFor(city, "City name can't be blank");
     } else if (!regex.test(cityValue)) {
-      setErrorFor(firstName, "Special characters aren't allowed");
+      setErrorFor(city, "Special characters aren't allowed");
     } else {
       setSuccessFor(city);
     }
 
-    console.log(birthYear.value);
   }
 
   function setErrorFor(input, message) {

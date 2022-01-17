@@ -54,10 +54,6 @@ ul.nav li::marker {
   visibility: hidden;
   position: absolute;
   top: 35px;
-  right: 10px;
-}
-
-.field-wrapper.margin-right-overlap-fix i {
   right: 35px;
 }
 
