@@ -45,7 +45,7 @@ if ($(".slider").length !== 0) {
 
     if (lastNameValue === "") {
       setErrorFor(lastName, "Last name can't be blank");
-    } else if (!regex.test(firstNameValue)) {
+    } else if (!regex.test(lastNameValue)) {
       setErrorFor(firstName, "Special characters aren't allowed");
     } else {
       setSuccessFor(lastName);
@@ -67,7 +67,7 @@ if ($(".slider").length !== 0) {
 
     if (addressValue === "") {
       setErrorFor(address, "Address field can't be blank");
-    } else if (!regex.test(firstNameValue)) {
+    } else if (!regex.test(addressValue)) {
       setErrorFor(firstName, "Special characters aren't allowed");
     } else {
       setSuccessFor(address);
@@ -75,7 +75,7 @@ if ($(".slider").length !== 0) {
 
     if (cityValue === "") {
       setErrorFor(city, "City name can't be blank");
-    } else if (!regex.test(firstNameValue)) {
+    } else if (!regex.test(cityValue)) {
       setErrorFor(firstName, "Special characters aren't allowed");
     } else {
       setSuccessFor(city);
