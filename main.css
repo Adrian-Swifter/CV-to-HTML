@@ -57,6 +57,10 @@ ul.nav li::marker {
   right: 10px;
 }
 
+.field-wrapper.margin-right-overlap-fix i {
+  right: 35px;
+}
+
 .field-wrapper.success i.fa-check-circle {
   color: #2ecc71;
   visibility: visible;
