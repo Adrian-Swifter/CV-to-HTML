@@ -42,7 +42,7 @@ ul.nav li::marker {
 
 .field-wrapper.success input,
 .field-wrapper.success textarea,
-.field-wrapper.error select {
+.field-wrapper.success select {
   border-color: #2ecc71;
 }
 
