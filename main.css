@@ -41,12 +41,14 @@ ul.nav li::marker {
 }
 
 .field-wrapper.success input,
-.field-wrapper.success textarea {
+.field-wrapper.success textarea,
+.field-wrapper.error select {
   border-color: #2ecc71;
 }
 
 .field-wrapper.error input,
-.field-wrapper.error textarea {
+.field-wrapper.error textarea,
+.field-wrapper.error select {
   border-color: #e74c3c;
 }
 
